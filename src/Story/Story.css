@@ -1,0 +1,32 @@
+.story {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 120px;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-size: cover;
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+    box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
+}
+
+.story:hover {
+    transform: scale(1.07);
+}
+
+.story__avatar {
+    margin: 10px;
+    border: 5px solid #2e81f2;
+}
+
+.story > h6 {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+    font-size: 13px;
+}
