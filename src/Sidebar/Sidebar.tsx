@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import './Sidebar.css'
 import { SidebarRow } from '../SidebarRow/SidebarRow'
 
@@ -15,6 +15,9 @@ type UserType = {
     displayName: string
 }
 
+const tsxFileDiscloser: React.FunctionComponent<ReactElement> = () => {
+    return <div>This is a tsx file...</div>
+}
 let user: UserType = {
     photoURL: 'https://cdn-icons-png.flaticon.com/512/21/21104.png',
     displayName: 'Nafee'
@@ -23,11 +26,6 @@ let user: UserType = {
 const Sidebar: React.FC = () => {
     return (
         <div className="sidebar">
-            {/* <SidebarRow title="Pages" />
-            <SidebarRow title="Friends" />
-            <SidebarRow title="Messenger" />
-            <SidebarRow title="Marketplace" />
-            <SidebarRow title="Videos" /> */}{' '}
             <SidebarRow src={user.photoURL} title={user.displayName} />
             <SidebarRow
                 Icon={LocalHospitalIcon}
