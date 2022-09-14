@@ -7,7 +7,7 @@ type StoryProps = {
     title: string
 }
 
-const bgImage: string =
+export const bgImage: string =
     'https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014__340.jpg'
 
 const Story: React.FC<StoryProps> = ({ img, profileSrc, title }) => {
