@@ -8,7 +8,7 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle'
 
 import ExpandMoreOutlined from '@material-ui/icons/ExpandMoreOutlined'
 
-type PostProps = {
+export type PostProps = {
     profilePic?: string
     image?: string
     username?: string

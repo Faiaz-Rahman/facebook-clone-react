@@ -1,9 +1,8 @@
 .app {
     background-color: #f1f2f5;
-    height: 100%;
 }
 
 .app__body {
     display: flex;
-    padding: 0 20px 0 0;
+    justify-content: space-between;
 }

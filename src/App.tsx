@@ -1,21 +1,21 @@
 import './App.css'
-import { Header } from '../src/Header/Header'
-import { Sidebar } from '../src/Sidebar/Sidebar'
-import { Feed } from './Feed/Feed'
+import { Login } from './Login/Login'
+
+// Firebase
+import { initializeApp } from 'firebase/app'
+import { firebaseConfig } from './Firebase/firebase'
+import { Routes, Route } from 'react-router-dom'
+import { Container } from './Container/Container'
+
+initializeApp(firebaseConfig)
 
 function App() {
     return (
         <div className="app">
-            {/* Headers */}
-            <Header />
-            {/* App Body */}
-            <div className="app__body">
-                {/* Sidebar */}
-                <Sidebar />
-                {/* Feed */}
-                <Feed />
-                {/* Widgets */}
-            </div>
+            <Routes>
+                <Route path="/" element={<Login />} />
+                <Route path="/home" element={<Container />} />
+            </Routes>
         </div>
     )
 }

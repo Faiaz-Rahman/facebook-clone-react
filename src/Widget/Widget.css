@@ -1,0 +1,7 @@
+.widget {
+    display: flex;
+    width: 20%;
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 90vh;
+}

@@ -15,9 +15,9 @@ type UserType = {
     displayName: string
 }
 
-const tsxFileDiscloser: React.FunctionComponent<ReactElement> = () => {
-    return <div>This is a tsx file...</div>
-}
+// const tsxFileDiscloser: React.FunctionComponent<ReactElement> = () => {
+//     return <div>This is a tsx file...</div>
+// }
 let user: UserType = {
     photoURL: 'https://cdn-icons-png.flaticon.com/512/21/21104.png',
     displayName: 'Nafee'

@@ -27,7 +27,7 @@
 .post__topInfo > p {
     font-size: small;
     color: grey;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
 .post__topInfo > h6 {
@@ -43,7 +43,7 @@
 
 .post__options {
     display: flex;
-    padding: 20px 30px;
+    padding: 15px 30px;
     justify-content: space-between;
     align-items: center;
     font-size: medium;
@@ -55,6 +55,9 @@
 .post__option {
     display: flex;
     align-items: center;
+    padding: 10px 20px 10px 20px;
+    flex: 1;
+    justify-content: center;
 }
 
 .post__option > p {
@@ -63,6 +66,8 @@
 
 .post__option:hover {
     cursor: pointer;
+    background-color: #eff2f5;
+    border-radius: 10px;
 }
 
 .post__option:hover > .MuiSvgIcon-root {
